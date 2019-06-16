@@ -1,0 +1,4 @@
+#!/bin/bash
+
+yt-dlp $@
+notify-send -t 3000 "Downloaded" "$@"
