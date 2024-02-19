@@ -72,4 +72,9 @@
   ("C-z" . undo-fu-only-undo)
   ("C-S-z" . undo-fu-only-redo))
 
+(use-package treesit-auto
+  :demand t
+  :config
+  (global-treesit-auto-mode))
+
 (provide 'base-extensions)
