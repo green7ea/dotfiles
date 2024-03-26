@@ -8,6 +8,7 @@
 (require 'base-meow)
 
 (require 'lang-markdown)
+(require 'lang-python)
 (require 'lang-rust)
 (require 'lang-scheme)
 (require 'lang-typescript)
