@@ -78,3 +78,6 @@
   (global-treesit-auto-mode))
 
 (provide 'base-extensions)
+
+(use-package flycheck
+  :config (global-flycheck-mode +1))
