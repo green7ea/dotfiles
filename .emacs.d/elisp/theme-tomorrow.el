@@ -68,9 +68,13 @@
   (setq nano-theme-var "dark"))
 
 (defun nano-theme-set-tomorrow ()
-  (tomorrow-set-theme tomorrow-colors))
+  (interactive)
+  (tomorrow-set-theme tomorrow-colors)
+  (nano-refresh-theme))
 
 (defun nano-theme-set-tomorrow-night ()
-  (tomorrow-set-theme tomorrow-night-colors))
+  (interactive)
+  (tomorrow-set-theme tomorrow-night-colors)
+  (nano-refresh-theme))
 
 (provide 'theme-tomorrow)

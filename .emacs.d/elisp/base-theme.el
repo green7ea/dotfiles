@@ -21,10 +21,17 @@
      "\\\\" "://"))
   (global-ligature-mode t))
 
-(use-package zenburn-theme
-  :ensure t
-  :config (load-theme 'zenburn t))
+(require 'theme-catppuccin)
+(require 'theme-nord)
+(require 'theme-scientist)
+(require 'theme-tomorrow)
+(require 'theme-zenburn)
 
-(set-frame-font "VictorMono Nerd Font 14" nil t)
+(use-package nano
+  :straight '(nano :type git :host github :repo "rougier/nano-emacs")
+  :init (set-frame-font "FiraCode 14" nil t)
+  :config
+  (menu-bar-mode -1)
+  (nano-theme-set-scientist))
 
 (provide 'base-theme)

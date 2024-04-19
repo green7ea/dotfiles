@@ -125,6 +125,24 @@
   (setq nano-color-highlight  (catppuccin-color variant 'surface2)) ; unsaved
 
   ;; to allow for toggling of the themes.
-  (setq nano-theme-var "dark"))
+  (setq nano-theme-var "dark")
+
+  (nano-refresh-theme))
+
+(defun nano-theme-set-catppuccin-mocha ()
+  (interactive)
+  (nano-theme-set-catppuccin catppuccin-mocha-colors))
+
+(defun nano-theme-set-catppuccin-macchiato ()
+  (interactive)
+  (nano-theme-set-catppuccin catppuccin-macchiato-colors))
+
+(defun nano-theme-set-catppuccin-frappe ()
+  (interactive)
+  (nano-theme-set-catppuccin catppuccin-frappe-colors))
+
+(defun nano-theme-set-catppuccin-latte ()
+  (interactive)
+  (nano-theme-set-catppuccin catppuccin-latte-colors))
 
 (provide 'theme-catppuccin)
