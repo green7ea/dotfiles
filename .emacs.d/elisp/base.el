@@ -2,7 +2,7 @@
 (setq straight-vc-git-default-clone-depth 1)
 
 (defconst temp-dir "/tmp/emacs-cache"
-  "Hostname-based elisp temp directories")
+  "Hostname-based elisp temp directories.")
 
 (defvar bootstrap-version)
 (let ((bootstrap-file
@@ -45,8 +45,7 @@
       inhibit-startup-message            t
       fringes-outside-margins            t
       frame-inhibit-implied-resize       t
-      x-select-enable-clipboard          t
-      use-package-always-ensure          t
+      select-enable-clipboard            t
       pixel-scroll-mode                  t
       tab-width                          2)
 
@@ -72,9 +71,9 @@
 (show-paren-mode 1)
 
 (defun yank-buffer-file-name ()
-    "Yank the current buffer filepath to clipboard"
-    (interactive)
-    (kill-new buffer-file-name))
+  "Yank the current buffer filepath to clipboard."
+  (interactive)
+  (kill-new buffer-file-name))
 
 (defun delete-file-and-buffer ()
   "Kill the current buffer and its associated file."

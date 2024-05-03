@@ -29,7 +29,9 @@
 
 (use-package nano
   :straight '(nano :type git :host github :repo "rougier/nano-emacs")
-  :init (set-frame-font "FiraCode 14" nil t)
+  :init
+  (setq nano-font-family-monospaced "Fira Code")
+  (setq nano-font-size 14)
   :config
   (menu-bar-mode -1)
   (nano-theme-set-scientist))
