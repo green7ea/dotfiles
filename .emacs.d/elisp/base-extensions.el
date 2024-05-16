@@ -10,22 +10,14 @@
   :bind
   ("M-x" . counsel-M-x)
   ("C-x C-m" . counsel-M-x)
-  ("C-x C-f" . counsel-find-file)
-  ("C-x c k" . counsel-yank-pop))
+  ("C-x C-f" . counsel-find-file))
 
 (use-package lsp-mode)
-
-(use-package counsel-projectile)
 
 (use-package vertico
   :ensure t
   :init (vertico-mode)
   :bind ("C-s" . swiper))
-
-(use-package orderless
-  :ensure t
-  :init (icomplete-mode)
-  :custom (completion-styles '(orderless)))
 
 (use-package magit)
 
@@ -48,24 +40,13 @@
   ("C-c i" . windmove-up)
   ("C-c o" . windmove-right))
 
-(use-package corfu
-  :ensure t
-  :init (corfu-mode))
-
 (use-package deadgrep
   :defer t)
 
 (use-package sudo-edit
   :defer t)
 
-(use-package yaml-mode
-  :defer t)
-
-(use-package highlight-indentation
-  :defer t)
-
-(use-package ace-window
-  :bind ("C-x o" . ace-window))
+(use-package ace-window)
 
 (use-package undo-fu
   :bind
@@ -77,7 +58,7 @@
   :config
   (global-treesit-auto-mode))
 
-(provide 'base-extensions)
-
 (use-package flycheck
   :config (global-flycheck-mode +1))
+
+(provide 'base-extensions)
