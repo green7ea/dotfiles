@@ -1,6 +1,6 @@
 spawn-at-startup "waybar"
 // Doesn't work
-// spawn-at-startup "bash setwallpaper ~/bg.jpg"
+spawn-at-startup "hyprpaper"
 
 prefer-no-csd
 
@@ -28,13 +28,15 @@ input {
     }
 
     // Next sections include libinput settings.
-    // Omitting settings disables them, or leaves them at their default values.
+    //
+    // Omitting settings disables them, or leaves them at their
+    // default values.
     touchpad {
         tap
-        // dwt
+        dwt
         // dwtp
         // natural-scroll
-        // accel-speed 0.2
+        accel-speed -0.1
         // accel-profile "flat"
     }
 
