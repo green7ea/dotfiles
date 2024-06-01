@@ -2,8 +2,6 @@ spawn-at-startup "waybar"
 // Doesn't work
 spawn-at-startup "hyprpaper"
 
-prefer-no-csd
-
 // This config is in the KDL format: https://kdl.dev
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
@@ -36,7 +34,7 @@ input {
         dwt
         // dwtp
         // natural-scroll
-        accel-speed -0.1
+        // accel-speed -0.1
         // accel-profile "flat"
     }
 
@@ -191,7 +189,7 @@ layout {
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
 // Additionally, clients will be informed that they are tiled, removing some rounded corners.
-// prefer-no-csd
+prefer-no-csd
 
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
@@ -218,7 +216,7 @@ animations {
 
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
-/-window-rule {
+window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
 
@@ -226,6 +224,16 @@ animations {
 
     // Use this instead if you want them visible on third-party screenshot tools.
     // block-out-from "screencast"
+}
+
+window-rule {
+    match is-active=false
+    opacity 0.9
+}
+
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
 }
 
 binds {
