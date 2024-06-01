@@ -1,5 +1,5 @@
 (defun markdown-follow-at-point ()
-    "Follow the link under the cursor leaving a marker behind"
+    "Follows the link under the cursor, leaving a marker behind."
     (interactive)
       ; Allows us to pop the marker stack to back track.
       (xref-push-marker-stack)

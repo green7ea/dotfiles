@@ -46,8 +46,6 @@
 (use-package sudo-edit
   :defer t)
 
-(use-package ace-window)
-
 (use-package undo-fu
   :bind
   ("C-z" . undo-fu-only-undo)

@@ -3,7 +3,6 @@
 (global-set-key [(f7)] 'deadgrep)
 (global-set-key [(f8)] 'counsel-projectile-find-file)
 (global-set-key [(f9)] 'magit-status)
-(global-set-key [(f10)] 'undo-only)
 (global-set-key [(f12)] 'kill-this-buffer)
 (global-set-key (kbd "M-<f12>") 'open-index)
 
