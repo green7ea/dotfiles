@@ -2,13 +2,9 @@
   "layer": "top",
 
   // Choose the order of the modules
-  "modules-left": ["sway/workspaces", "sway/mode"],
+  "modules-left": [],
   "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "network", "battery", "cpu", "memory", "temperature", "backlight", "tray"],
-
-  "sway/mode": {
-    "format": "<span style=\"italic\">{}</span>"
-  },
+  "modules-right": ["pulseaudio", "backlight", "network", "battery", "temperature", "tray"],
 
   "tray": {
     "icon-size": 21,
@@ -17,17 +13,6 @@
 
   "clock": {
     "format": "{:%a %b %d     %H:%M}",
-    "tooltip": false
-  },
-
-  "cpu": {
-    "format": "{usage}% ",
-    "tooltip": false,
-    "on-click": "kitty -e gotop"
-  },
-
-  "memory": {
-    "format": "{}% ",
     "tooltip": false
   },
 
@@ -58,11 +43,11 @@
   },
 
   "network": {
-    "format-wifi": "{ipaddr} - {essid}  {signalStrength}%",
-    "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+    "format-wifi": "{essid}  {signalStrength}%",
+    "format-ethernet": "{ifname} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{essid} {signalStrength}% {ifname}: {ipaddr}/{cidr}"
+    "on-click": "kitty -e nmtui"
   },
 
   "pulseaudio": {
