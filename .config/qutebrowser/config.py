@@ -16,8 +16,8 @@ c.fonts.default_size = '15pt'
 config.bind('m', 'spawn mpv {url}')
 config.bind('M', 'spawn kitty video {url}')
 
-config.bind('<Alt-x>', 'set-cmd-text :')
-config.bind('<Ctrl-s>', 'set-cmd-text :search')
+config.bind('<Alt-x>', 'cmd-set-text :')
+config.bind('<Ctrl-s>', 'cmd-set-text :search')
 
 config.bind('n', 'scroll left')
 config.bind('o', 'scroll right')
@@ -32,7 +32,7 @@ config.bind('I', 'tab-next')
 config.bind('?', 'search-next')
 config.bind('u', 'enter-mode insert')
 
-config.bind('gO', 'set-cmd-text :open -t -r ')
+config.bind('gO', 'cmd-set-text :open -t -r ')
 
 config.bind('r', 'spawn --userscript readability')
 config.bind('R', 'spawn remarkable {url} {title}')
