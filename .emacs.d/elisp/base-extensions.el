@@ -56,6 +56,8 @@
   :config
   (global-treesit-auto-mode))
 
+(use-package counsel-projectile)
+
 (use-package flycheck
   :config (global-flycheck-mode +1))
 
