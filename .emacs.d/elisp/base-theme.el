@@ -47,9 +47,9 @@
   ("M-0" . winum-select-window-0)
   :config (winum-mode))
 
-(use-package zenburn-theme
+(use-package doom-themes
   :config
-  (load-theme 'zenburn t))
+  (load-theme 'doom-opera t))
 
 (use-package doom-modeline
   :ensure t
