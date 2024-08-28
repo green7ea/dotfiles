@@ -1,7 +1,6 @@
 (global-set-key [(f5)] 'recompile)
 (global-set-key [(C-f5)] 'compile)
 (global-set-key [(f7)] 'deadgrep)
-(global-set-key [(f8)] 'counsel-projectile-find-file)
 (global-set-key [(f9)] 'magit-status)
 (global-set-key [(f12)] 'kill-this-buffer)
 (global-set-key (kbd "M-<f12>") 'open-index)

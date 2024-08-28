@@ -1,23 +1,8 @@
-(use-package company
-  :init
-  (add-hook 'after-init-hook 'global-company-mode))
-
 (use-package expand-region
   :bind
   ("M-s" . er/expand-region))
 
-(use-package counsel
-  :bind
-  ("M-x" . counsel-M-x)
-  ("C-x C-m" . counsel-M-x)
-  ("C-x C-f" . counsel-find-file))
-
 (use-package lsp-mode)
-
-(use-package vertico
-  :ensure t
-  :init (vertico-mode)
-  :bind ("C-s" . swiper))
 
 (use-package magit)
 
@@ -55,8 +40,6 @@
   :demand t
   :config
   (global-treesit-auto-mode))
-
-(use-package counsel-projectile)
 
 (use-package flycheck
   :config (global-flycheck-mode +1))
