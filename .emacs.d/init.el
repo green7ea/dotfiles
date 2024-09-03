@@ -8,6 +8,7 @@
 (require 'base-theme)
 (require 'base-meow)
 
+(require 'lang-java)
 (require 'lang-markdown)
 (require 'lang-python)
 (require 'lang-rust)

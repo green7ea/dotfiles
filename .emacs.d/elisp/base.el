@@ -46,10 +46,10 @@
       fringes-outside-margins            t
       frame-inhibit-implied-resize       t
       select-enable-clipboard            t
-      pixel-scroll-mode                  t
-      tab-width                          2)
+      pixel-scroll-mode                  t)
 
-(setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil
+              tab-width        2)
 
 ;; Use current buffer as a default for new buffers
 (setq display-buffer-base-action
