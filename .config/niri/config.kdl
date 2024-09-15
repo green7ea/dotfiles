@@ -77,6 +77,11 @@ window-rule {
     clip-to-geometry true
 }
 
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
 cursor {
     xcursor-theme "Posy_Cursor_Black"
     xcursor-size 24
@@ -85,7 +90,7 @@ cursor {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+RETURN { spawn "kitty"; }
+    Mod+RETURN { spawn "wezterm"; }
     Mod+SPACE { spawn "fuzzel"; }
     Super+Alt+L { spawn "swaylock"; }
 
