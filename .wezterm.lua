@@ -11,7 +11,7 @@ config.color_scheme = 'Tiniri Dark'
 config.font = wezterm.font 'Fira Code'
 config.font_size = 14.0
 
-config.window_decorations = 'NONE'
+config.window_decorations = 'RESIZE'
 
 config.harfbuzz_features = { 'calt=1', 'clig=1', 'liga=1' }
 
