@@ -1,0 +1,23 @@
+profile {
+	output eDP-1 disable
+	output DP-1 enable
+}
+
+profile {
+	output eDP-1 disable
+	output DP-2 enable
+}
+
+profile {
+	output eDP-1 disable
+	output DP-3 enable
+}
+
+profile {
+	output eDP-1 disable
+	output DP-4 enable
+}
+
+profile {
+	output eDP-1 enable
+}
