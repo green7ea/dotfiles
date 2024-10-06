@@ -1,5 +1,6 @@
 spawn-at-startup "waybar"
 spawn-at-startup "hyprpaper"
+spawn-at-startup "kanshi"
 spawn-at-startup "swayidle" "-w" "timeout" "120" "niri msg action power-off-monitors"
 
 // Check the wiki for a full description of the configuration:
