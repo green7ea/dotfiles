@@ -44,6 +44,4 @@
 (use-package flycheck
   :config (global-flycheck-mode +1))
 
-(use-package all-the-icons)
-
 (provide 'base-extensions)

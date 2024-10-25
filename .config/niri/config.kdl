@@ -24,15 +24,6 @@ input {
 }
 
 // Find more information on the wiki:
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
-/-output "eDP-1" {
-    mode "1920x1080@120.030"
-    scale 1.0
-    transform "normal"
-    position x=0 y=0
-}
-
-// Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     gaps 16
@@ -58,7 +49,7 @@ prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 animations {
-    slowdown 1.5
+    slowdown 0.5
 }
 
 window-rule {
@@ -203,6 +194,9 @@ binds {
 
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
+    Mod+L { set-column-width "33.33333%"; }
+    Mod+U { set-column-width "50%"; }
+    Mod+Y { set-column-width "66.66667%"; }
 
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
