@@ -1,10 +1,10 @@
-spawn-at-startup "waybar"
+spawn-at-startup "cosmic-panel"
+spawn-at-startup "cosmic-osd"
+
 spawn-at-startup "hyprpaper"
+
 spawn-at-startup "kanshi"
 spawn-at-startup "swayidle" "-w" "timeout" "120" "niri msg action power-off-monitors"
-
-// Check the wiki for a full description of the configuration:
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Overview
 
 input {
     keyboard {
@@ -93,6 +93,12 @@ binds {
 
     XF86MonBrightnessUp    { spawn "brightnessctl" "set" "10%+"; }
     XF86MonBrightnessDown  { spawn "brightnessctl" "set" "10%-"; }
+
+    XF86AudioPlay { spawn "playerctl" "play-pause"; }
+    XF86AudioPause { spawn "playerctl" "play-pause"; }
+    XF86AudioStop { spawn "playerctl" "play-pause"; }
+    XF86AudioNext { spawn "playerctl" "next"; }
+    XF86AudioPrev { spawn "playerctl" "previous"; }
 
     Mod+Q { close-window; }
 
