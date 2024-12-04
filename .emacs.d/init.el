@@ -7,6 +7,7 @@
 (require 'base-shell)
 (require 'base-theme)
 (require 'base-meow)
+(require 'base-llm)
 
 (require 'lang-java)
 (require 'lang-markdown)
@@ -14,5 +15,3 @@
 (require 'lang-rust)
 (require 'lang-scheme)
 (require 'lang-typescript)
-
-(require 'treesit-langs)

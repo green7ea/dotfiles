@@ -12,6 +12,10 @@
   (completion-styles '(orderless basic))
   (completion-category-overrides '((file (styles basic partial-completion)))))
 
+(use-package savehist
+  :ensure nil ; built-in
+  :hook (after-init . savehist-mode))
+
 (use-package marginalia
   :ensure t
   :init (marginalia-mode))
