@@ -70,6 +70,21 @@
 
 (show-paren-mode 1)
 
+(defun keyboard-quit-dwim ()
+  "Do-What-I-Mean behaviour for a general `keyboard-quit'."
+  (interactive)
+  (cond
+   ((region-active-p)
+    (keyboard-quit))
+   ((derived-mode-p 'completion-list-mode)
+    (delete-completion-window))
+   ((> (minibuffer-depth) 0)
+    (abort-recursive-edit))
+   (t
+    (keyboard-quit))))
+
+(define-key global-map (kbd "C-g") #'keyboard-quit-dwim)
+
 (defun yank-buffer-file-name ()
   "Yank the current buffer filepath to clipboard."
   (interactive)
