@@ -1,10 +1,13 @@
 spawn-at-startup "cosmic-panel"
-spawn-at-startup "cosmic-osd"
 
 spawn-at-startup "hyprpaper"
 
 spawn-at-startup "kanshi"
 spawn-at-startup "swayidle" "-w" "timeout" "120" "niri msg action power-off-monitors"
+
+spawn-at-startup "xwayland-satellite"
+
+spawn-at-startup "cosmic-osd"
 
 input {
     keyboard {
@@ -82,9 +85,9 @@ cursor {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+RETURN { spawn "wezterm"; }
-    Mod+SPACE { spawn "fuzzel"; }
-    Super+Alt+L { spawn "swaylock"; }
+    Mod+RETURN repeat=false { spawn "wezterm"; }
+    Mod+SPACE repeat=false { spawn "fuzzel"; }
+    Super+Shift+L repeat=false { spawn "swaylock"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
@@ -94,11 +97,11 @@ binds {
     XF86MonBrightnessUp    { spawn "brightnessctl" "set" "10%+"; }
     XF86MonBrightnessDown  { spawn "brightnessctl" "set" "10%-"; }
 
-    XF86AudioPlay { spawn "playerctl" "play-pause"; }
-    XF86AudioPause { spawn "playerctl" "play-pause"; }
-    XF86AudioStop { spawn "playerctl" "play-pause"; }
-    XF86AudioNext { spawn "playerctl" "next"; }
-    XF86AudioPrev { spawn "playerctl" "previous"; }
+    XF86AudioPlay repeat=false { spawn "playerctl" "play-pause"; }
+    XF86AudioPause repeat=false { spawn "playerctl" "play-pause"; }
+    XF86AudioStop repeat=false { spawn "playerctl" "play-pause"; }
+    XF86AudioNext repeat=false { spawn "playerctl" "next"; }
+    XF86AudioPrev repeat=false { spawn "playerctl" "previous"; }
 
     Mod+Q { close-window; }
 
@@ -195,8 +198,8 @@ binds {
     Mod+M { maximize-column; }
     Mod+Shift+M { fullscreen-window; }
     Mod+C { center-column; }
-    Mod+Z { spawn "makoctl" "dismiss"; }
-    Mod+Shift+Z { spawn "makoctl" "dismiss" "-a"; }
+    Mod+Z repeat=false { spawn "makoctl" "dismiss"; }
+    Mod+Shift+Z repeat=false { spawn "makoctl" "dismiss" "-a"; }
 
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
