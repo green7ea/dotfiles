@@ -15,3 +15,7 @@
 (require 'lang-rust)
 (require 'lang-scheme)
 (require 'lang-typescript)
+
+(use-package plz)
+(use-package json)
+(require 'clickhouse)
