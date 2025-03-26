@@ -18,6 +18,9 @@
   (load bootstrap-file nil 'nomessage))
 (straight-use-package 'use-package)
 
+(straight-use-package '(project :type built-in))
+(straight-use-package '(xref :type built-in))
+
 ;; Core settings
 ;; UTF-8 please
 (set-charset-priority 'unicode)
