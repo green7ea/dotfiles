@@ -49,7 +49,9 @@
       fringes-outside-margins            t
       frame-inhibit-implied-resize       t
       select-enable-clipboard            t
-      pixel-scroll-mode                  t)
+      pixel-scroll-mode                  t
+      scroll-conservatively              10
+      scroll-margin                      5)
 
 (setq-default indent-tabs-mode nil
               tab-width        2)
