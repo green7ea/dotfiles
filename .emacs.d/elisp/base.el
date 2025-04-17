@@ -38,6 +38,7 @@
       visible-bell                        nil
       ring-bell-function                  'ignore
       custom-file                         "~/.emacs.d/custom.el"
+      completions-detailed                t
       ;; http://ergoemacs.org/emacs/emacs_stop_cursor_enter_prompt.html
       minibuffer-prompt-properties
       '(read-only t point-entered minibuffer-avoid-prompt face minibuffer-prompt)
@@ -51,7 +52,9 @@
       select-enable-clipboard            t
       pixel-scroll-mode                  t
       scroll-conservatively              10
-      scroll-margin                      5)
+      scroll-margin                      5
+      display-line-numbers-width         3
+      display-line-numbers-widen         nil)
 
 (setq-default indent-tabs-mode nil
               tab-width        2)
