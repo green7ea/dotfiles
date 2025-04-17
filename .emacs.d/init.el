@@ -12,6 +12,5 @@
 (require 'lang-java)
 (require 'lang-markdown)
 (require 'lang-python)
-(require 'lang-rust)
 (require 'lang-scheme)
 (require 'lang-typescript)
