@@ -1,3 +1,11 @@
+(defun me-ow-till-backwards (n ch)
+  (interactive "p\ncBackwards till:")
+  (meow-till (* -1 n) ch))
+
+(defun me-ow-find-backwards (n ch)
+  (interactive "p\ncBackwards find:")
+  (meow-find (* -1 n) ch))
+
 (defun meow-setup ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-colemak)
   (meow-motion-overwrite-define-key
@@ -47,6 +55,7 @@
    '("e" . meow-next)
    '("E" . meow-next-expand)
    '("f" . meow-find)
+   '("F" . me-ow-find-backwards)
    '("g" . meow-cancel-selection)
    '("G" . meow-grab)
    '("h" . meow-block)
@@ -65,10 +74,12 @@
    '("O" . meow-right-expand)
    '("p" . meow-yank)
    '("q" . meow-quit)
-   '("r" . meow-replace)
+   '("r" . er/expand-region)
+   '("R" . er/contract-region)
    '("s" . meow-insert)
    '("S" . meow-open-above)
    '("t" . meow-till)
+   '("T" . me-ow-till-backwards)
    '("u" . meow-undo)
    '("U" . meow-undo-in-selection)
    '("v" . meow-search)
@@ -81,15 +92,16 @@
    '("'" . repeat)
    '("<escape>" . ignore)))
 
+(use-package expand-region)
+
 (use-package meow
   :config (meow-setup)
   :init (custom-set-faces
-   '(meow-normal-cursor ((t (:background "white"))))
-   '(meow-insert-cursor ((t (:background "white"))))
-   '(meow-motion-cursor ((t (:background "white"))))
-   '(meow-keypad-cursor ((t (:background "white"))))
-   '(meow-beacon-cursor ((t (:background "white")))))
-
+         '(meow-normal-cursor ((t (:background "white"))))
+         '(meow-insert-cursor ((t (:background "white"))))
+         '(meow-motion-cursor ((t (:background "white"))))
+         '(meow-keypad-cursor ((t (:background "white"))))
+         '(meow-beacon-cursor ((t (:background "white")))))
   (meow-global-mode 1))
 
 (provide 'base-meow)
