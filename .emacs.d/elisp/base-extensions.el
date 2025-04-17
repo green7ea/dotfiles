@@ -1,9 +1,3 @@
-(use-package expand-region
-  :bind
-  ("M-s" . er/expand-region))
-
-(use-package lsp-mode)
-
 (use-package magit)
 
 (use-package ranger
