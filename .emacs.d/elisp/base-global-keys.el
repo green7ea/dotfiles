@@ -23,11 +23,6 @@
   (bind-key* (kbd "C-M-i") 'backward-paragraph)
   (bind-key* (kbd "C-M-o") 'forward-word)
 
-  (bind-key* (kbd "M-<left>") 'shrink-window-horizontally)
-  (bind-key* (kbd "M-<right>") 'enlarge-window-horizontally)
-  (bind-key* (kbd "M-<down>") 'shrink-window)
-  (bind-key* (kbd "M-<up>") 'enlarge-window)
-
   (bind-key* (kbd "C-c C-f b") 'flyspell-buffer)
   (bind-key* (kbd "C-c C-f w") 'flyspell-auto-correct-word)
   (bind-key* (kbd "C-c C-f c") 'flyspell-check-previous-highlighted-word)
