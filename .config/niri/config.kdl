@@ -32,10 +32,14 @@ layout {
     gaps 16
     center-focused-column "never"
 
+    shadow {
+      on
+    }
+
     preset-column-widths {
-        proportion 0.33333
+        proportion 0.3
         proportion 0.5
-        proportion 0.66667
+        proportion 0.7
     }
 
     default-column-width { proportion 0.5; }
@@ -82,6 +86,8 @@ binds {
 
     Mod+RETURN repeat=false { spawn "wezterm"; }
     Mod+SPACE repeat=false { spawn "fuzzel"; }
+    Mod+W repeat=false { toggle-overview; }
+    Mod+F repeat=false { toggle-window-floating; }
     Super+Shift+L repeat=false { spawn "~/.local/bin/lock.sh"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
@@ -198,9 +204,10 @@ binds {
 
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
-    Mod+L { set-column-width "33.33333%"; }
+    Mod+L { set-column-width "30%"; }
     Mod+U { set-column-width "50%"; }
-    Mod+Y { set-column-width "66.66667%"; }
+    Mod+Y { set-column-width "70%"; }
+    Mod+SemiColon { set-column-width "90%"; }
 
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
