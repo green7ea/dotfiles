@@ -8,6 +8,7 @@
 (require 'base-theme)
 (require 'base-meow)
 (require 'base-llm)
+(require 'base-langtool)
 
 (require 'lang-java)
 (require 'lang-markdown)
