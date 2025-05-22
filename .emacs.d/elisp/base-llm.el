@@ -2,11 +2,11 @@
     :bind ("C-`" . gptel-send)
     :config
     (setq
-     gptel-model   'test
-     gptel-backend (gptel-make-openai "llama-cpp"
+     gptel-model   'smollm2
+     gptel-backend (gptel-make-openai "ramalama"
                      :stream t
                      :protocol "http"
-                     :host "localhost:11434"
-                     :models '(llama3.1))))
+                     :host "localhost:8080"
+                     :models '(smollm2))))
 
 (provide 'base-llm)
