@@ -13,4 +13,3 @@
 (require 'lang-markdown)
 (require 'lang-python)
 (require 'lang-scheme)
-(require 'lang-typescript)
