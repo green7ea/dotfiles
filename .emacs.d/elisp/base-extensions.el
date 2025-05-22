@@ -1,14 +1,5 @@
 (use-package magit)
 
-(use-package ranger
-  :bind (:map ranger-mode-map
-              ("n" . ranger-up-directory)
-              ("e" . ranger-next-file)
-              ("i" . ranger-prev-file)
-              ("o" . ranger-find-file))
-  :init
-  (ranger-override-dired-mode t))
-
 (use-package which-key
   :init (which-key-mode))
 
