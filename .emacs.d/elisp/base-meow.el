@@ -1,11 +1,3 @@
-(defun me-ow-till-backwards (n ch)
-  (interactive "p\ncBackwards till:")
-  (meow-till (* -1 n) ch))
-
-(defun me-ow-find-backwards (n ch)
-  (interactive "p\ncBackwards find:")
-  (meow-find (* -1 n) ch))
-
 (defun meow-setup ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-colemak)
   (meow-motion-overwrite-define-key
@@ -55,7 +47,6 @@
    '("e" . meow-next)
    '("E" . meow-next-expand)
    '("f" . meow-find)
-   '("F" . me-ow-find-backwards)
    '("g" . meow-cancel-selection)
    '("G" . meow-grab)
    '("h" . meow-block)
@@ -79,7 +70,6 @@
    '("s" . meow-insert)
    '("S" . meow-open-above)
    '("t" . meow-till)
-   '("T" . me-ow-till-backwards)
    '("u" . meow-undo)
    '("U" . meow-undo-in-selection)
    '("v" . meow-search)
