@@ -6,8 +6,11 @@
       (markdown-follow-link-at-point))
 
 (use-package markdown-mode
+  :straight nil
+  :ensure nil
   :config (setq-default markdown-hide-urls t)
   :bind (:map markdown-mode-map
               ("M-." . markdown-follow-at-point)))
 
 (provide 'lang-markdown)
+;;; lang-markdown.el ends here
