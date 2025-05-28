@@ -11,3 +11,4 @@
               ("M-." . markdown-follow-at-point)))
 
 (provide 'lang-markdown)
+;;; lang-markdown.el ends here

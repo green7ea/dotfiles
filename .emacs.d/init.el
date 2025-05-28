@@ -10,7 +10,9 @@
 (require 'base-llm)
 (require 'base-langtool)
 
-(require 'lang-java)
+(require 'base-eglot)
+(require 'lang-typescript)
 (require 'lang-markdown)
 (require 'lang-python)
-(require 'lang-scheme)
+
+;;; init.el ends here
