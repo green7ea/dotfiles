@@ -3,7 +3,7 @@
   :ensure nil ; built-in
   :bind
   (:map eglot-mode-map
-        ("M-RET" . eglot-code-action)
+        ("M-RET" . eglot-code-actions)
         ([f2] . eglot-rename)
         ([f6] . eglot-format-buffer))
   :config
