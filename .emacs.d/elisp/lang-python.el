@@ -1,6 +1,5 @@
 (use-package python-ts-mode
-  :straight nil
-  :ensure nil
+  :straight (:type built-in)
   :mode (("\\.py$" . python-ts-mode))
   :hook ((python-ts-mode . eglot-ensure)))
 

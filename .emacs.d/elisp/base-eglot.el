@@ -1,6 +1,5 @@
 (use-package eglot
-  :straight nil
-  :ensure nil ; built-in
+  :straight (:type built-in)
   :bind
   (:map eglot-mode-map
         ("M-RET" . eglot-code-actions)

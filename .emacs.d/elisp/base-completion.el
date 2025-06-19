@@ -13,7 +13,7 @@
   (completion-category-overrides '((file (styles basic partial-completion)))))
 
 (use-package savehist
-  :ensure nil ; built-in
+  :straight (:type built-in)
   :hook (after-init . savehist-mode))
 
 (use-package marginalia
