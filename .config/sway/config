@@ -11,7 +11,7 @@ set $left n
 set $down e
 set $up i
 set $right o
-set $term kitty
+set $term wezterm
 set $menu wofi --show run,drun -M fuzzy -i
 set $screenshot grim -g "$(slurp)" - | swappy -f -
 set $history clipman pick -t wofi

@@ -47,7 +47,7 @@
     "format-ethernet": "{ifname} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
-    "on-click": "kitty -e nmtui"
+    "on-click": "wezterm start nmtui"
   },
 
   "pulseaudio": {
