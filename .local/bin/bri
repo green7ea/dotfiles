@@ -7,4 +7,10 @@ if __name__ == '__main__':
     raw_level = int(sys.argv.pop())
 
     level = max(min(raw_level, 100), 0)
-    subprocess.call(['ddcutil', '-d', '1', 'setvcp', '0x10', str(level)])
+
+    detect = subprocess.check_output(['ddcutil', 'detect'], text=True)
+    displays = list(filter(lambda s: s.startswith('Display '),
+                      detect.split('\n')))
+
+    for index, _ in enumerate(displays):
+      subprocess.call(['ddcutil', '-d', str(index + 1), 'setvcp', '0x10', str(level)])

@@ -31,6 +31,8 @@ input {
 layout {
     gaps 16
     center-focused-column "never"
+    always-center-single-column
+    background-color "#000000"
 
     shadow {
       on
@@ -48,6 +50,13 @@ layout {
         width 4
         active-color "#ffc87f"
         inactive-color "#505050"
+    }
+
+    struts {
+        left 8
+        right 8
+        top 8
+        bottom 8
     }
 }
 
@@ -124,6 +133,9 @@ binds {
     Mod+Shift+I     { move-window-up; }
     Mod+Shift+O     { move-column-right; }
 
+    Mod+Grave { focus-monitor-next; }
+    Mod+Shift+Grave { move-column-to-monitor-next; }
+
     Mod+Home { focus-column-first; }
     Mod+End  { focus-column-last; }
     Mod+Ctrl+Home { move-column-to-first; }
@@ -142,10 +154,10 @@ binds {
     Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
     Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
     Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
-    Mod+Shift+Ctrl+H     { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
-    Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
+    Mod+Shift+Ctrl+N     { move-column-to-monitor-left; }
+    Mod+Shift+Ctrl+E     { move-column-to-monitor-down; }
+    Mod+Shift+Ctrl+I     { move-column-to-monitor-up; }
+    Mod+Shift+Ctrl+O     { move-column-to-monitor-right; }
 
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }

@@ -19,5 +19,11 @@ profile {
 }
 
 profile {
+	output eDP-1 disable
+	output DP-4 enable
+	output DP-5 enable
+}
+
+profile {
 	output eDP-1 enable
 }
