@@ -31,6 +31,8 @@ input {
 layout {
     gaps 16
     center-focused-column "never"
+    always-center-single-column
+    background-color "#000000"
 
     shadow {
       on
@@ -48,6 +50,13 @@ layout {
         width 4
         active-color "#ffc87f"
         inactive-color "#505050"
+    }
+
+    struts {
+        left 8
+        right 8
+        top 8
+        bottom 8
     }
 }
 
@@ -123,6 +132,9 @@ binds {
     Mod+Shift+E     { move-window-down; }
     Mod+Shift+I     { move-window-up; }
     Mod+Shift+O     { move-column-right; }
+
+    Mod+Grave { focus-monitor-next; }
+    Mod+Shift+Grave { move-column-to-monitor-next; }
 
     Mod+Home { focus-column-first; }
     Mod+End  { focus-column-last; }
