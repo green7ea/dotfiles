@@ -3,6 +3,9 @@
 (use-package which-key
   :init (which-key-mode))
 
+(use-package git-timemachine
+  :defer t)
+
 (use-package windmove
   :bind
   ("C-c n" . windmove-left)
@@ -28,5 +31,8 @@
 
 (use-package flycheck
   :config (global-flycheck-mode +1))
+
+(use-package combobulate
+  :defer t)
 
 (provide 'base-extensions)
