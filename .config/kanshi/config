@@ -1,27 +1,12 @@
 profile {
-	output eDP-1 disable
-	output DP-1 enable
+  output "LG Electronics LG HDR WQHD 0x0002ECB7" enable
+  output eDP-1 disable
 }
 
 profile {
-	output eDP-1 disable
-	output DP-2 enable
-}
-
-profile {
-	output eDP-1 disable
-	output DP-3 enable
-}
-
-profile {
-	output eDP-1 disable
-	output DP-4 enable
-}
-
-profile {
-	output eDP-1 disable
-	output DP-4 enable
-	output DP-5 enable
+  output "Iiyama North America PL2793Q 12465435A1107" enable
+  output "Iiyama North America PL2793Q 12465435A1109" enable
+  output "LG Display 0x07A1 0x0000FFA1" disable
 }
 
 profile {
