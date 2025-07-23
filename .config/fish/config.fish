@@ -7,13 +7,13 @@ export LANG=en_CA.UTF-8
 export COLORTERM=truecolor
 
 function fish_user_key_bindings
-    bind \en backward-char
-    bind \ee history-search-forward
-    bind \ei history-search-backward
-    bind \eo forward-char
+    bind alt-n backward-char
+    bind alt-e history-search-forward
+    bind alt-i history-search-backward
+    bind alt-o forward-char
 
-    bind \cn backward-word
-    bind \co forward-word
+    bind ctrl-alt-n backward-word
+    bind ctrl-alt-o forward-word
 end
 
 function postexec_newline --on-event fish_postexec
