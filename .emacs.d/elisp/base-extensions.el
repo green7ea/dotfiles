@@ -32,7 +32,6 @@
 (use-package flycheck
   :config (global-flycheck-mode +1))
 
-(use-package combobulate
-  :defer t)
+(add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
 
 (provide 'base-extensions)
