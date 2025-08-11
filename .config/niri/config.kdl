@@ -9,6 +9,10 @@ spawn-at-startup "xwayland-satellite"
 
 spawn-at-startup "cosmic-osd"
 
+environment {
+    DISPLAY ":0"
+}
+
 input {
     keyboard {
         xkb {
