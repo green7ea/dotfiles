@@ -1,5 +1,5 @@
 (setq-default cursor-type 'bar)
-(set-frame-font "FiraCode 14" nil t)
+(set-frame-font "FiraCode 11" nil t)
 (blink-cursor-mode 0)
 
 (use-package ligature
@@ -58,18 +58,18 @@
 
 (setq default-frame-alist
       (append (list
-	       '(min-height . 1)
+	             '(min-height . 1)
                '(height     . 45)
-	       '(min-width  . 1)
+	             '(min-width  . 1)
                '(width      . 81)
                '(vertical-scroll-bars . nil)
-               '(internal-border-width . 24)
+               '(internal-border-width . 12)
                '(left-fringe    . 0)
                '(right-fringe   . 0)
                '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
 
-(setq-default left-margin-width 2
-              right-margin-width 2)
+(setq-default left-margin-width 1
+              right-margin-width 1)
 
 (provide 'base-theme)

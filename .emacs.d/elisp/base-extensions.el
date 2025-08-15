@@ -32,6 +32,8 @@
 (use-package flycheck
   :config (global-flycheck-mode +1))
 
+(use-package just-mode)
+
 (add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
 
 (provide 'base-extensions)
