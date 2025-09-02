@@ -11,6 +11,7 @@
 (require 'base-langtool)
 
 (require 'base-eglot)
+(require 'base-yaml)
 (require 'lang-typescript)
 (require 'lang-markdown)
 (require 'lang-python)
