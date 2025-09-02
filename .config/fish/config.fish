@@ -1,9 +1,7 @@
 set PATH /home/manu/.local/bin /home/manu/.cargo/bin $PATH
 set PKG_CONFIG_PATH /home/manu/.local/lib/pkgconfig
-set LANG en_CA.UTF-8
 
-export EDITOR="emacs"
-export LANG=en_CA.UTF-8
+export EDITOR="emacs -nw"
 export COLORTERM=truecolor
 
 function fish_user_key_bindings

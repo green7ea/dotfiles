@@ -2,13 +2,18 @@ profile home {
   output "LG Electronics LG HDR WQHD 0x0002ECB7" {
     mode 3440x1440@75.050Hz
     adaptive_sync on
+    scale 1.1
   }
   output eDP-1 disable
 }
 
 profile work {
-  output "Iiyama North America PL2793Q 12465435A1107" enable
-  output "Iiyama North America PL2793Q 12465435A1109" enable
+  output "Iiyama North America PL2793Q 12465435A1107" {
+    scale 1.2
+  }
+  output "Iiyama North America PL2793Q 12465435A1109" {
+    scale 1.2
+  }
   output "LG Display 0x07A1 0x0000FFA1" disable
 }
 

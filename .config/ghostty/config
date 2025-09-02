@@ -1,0 +1,33 @@
+# ghostty +show-config --default --docs
+
+# theme = nord-wave
+# theme = Tomorrow Night
+theme = zenbones_dark
+# theme = zenwritten_dark
+
+# font-family = Fira Code
+font-family = Monaspace Neon
+font-family = Roboto
+font-family = Noto
+
+font-feature = calt
+font-feature = liga
+font-feature = dlig
+font-feature = ss01
+font-feature = ss02
+font-feature = ss03
+font-feature = ss04
+font-feature = ss05
+font-feature = ss06
+font-feature = ss07
+font-feature = ss08
+font-feature = ss09
+
+window-padding-x = 10
+window-padding-y = 5
+
+shell-integration-features = no-cursor
+cursor-style = underline
+
+background-opacity = 0.95
+background-blur = 20

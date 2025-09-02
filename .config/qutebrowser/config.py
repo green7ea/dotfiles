@@ -11,7 +11,7 @@ c.hints.chars = 'arstneioqwfpuy'
 c.tabs.background = True
 c.tabs.last_close = 'close'
 c.tabs.show = 'switching'
-c.tabs.show_switching_delay = 4000
+c.tabs.show_switching_delay = 60000
 
 c.zoom.default = '125%'
 
@@ -40,7 +40,5 @@ config.bind('gO', 'cmd-set-text :open -t -r ')
 
 config.bind('r', 'spawn --userscript readability')
 config.bind('R', 'spawn remarkable {url} {title}')
-
-
 
 config.load_autoconfig(False)
