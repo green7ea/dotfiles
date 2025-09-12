@@ -22,7 +22,7 @@
 
 (use-package consult
   :bind
-  ("M-g g" . consult-goto-line)
+  ("M-g M-g" . consult-goto-line)
   ("C-s" . consult-line)
   ("C-x b" . consult-buffer)
   :init

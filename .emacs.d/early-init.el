@@ -1,3 +1,5 @@
+(setq read-process-output-max (* 1024 1024))
+
 (setq package-enable-at-startup nil)
 (setq site-run-file nil)
 (menu-bar-mode -1)
