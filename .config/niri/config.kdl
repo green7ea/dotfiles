@@ -1,12 +1,9 @@
 spawn-at-startup "cosmic-panel"
-
 spawn-at-startup "hyprpaper"
-
+spawn-at-startup "sunsetr"
 spawn-at-startup "kanshi"
 spawn-at-startup "swayidle" "-w" "timeout" "120" "niri msg action power-off-monitors"
-
 spawn-at-startup "cosmic-osd"
-
 spawn-at-startup "opensnitch-ui"
 
 input {
