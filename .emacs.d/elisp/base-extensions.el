@@ -14,6 +14,12 @@
 (use-package sudo-edit
   :defer t)
 
+(use-package shackle
+  :init
+  (setq shackle-default-rule '(:same t))
+  :config
+  (shackle-mode))
+
 (use-package undo-fu
   :bind
   ("C-z" . undo-fu-only-undo)

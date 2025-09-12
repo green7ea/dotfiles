@@ -59,13 +59,6 @@
 (setq-default indent-tabs-mode nil
               tab-width        2)
 
-;; Use current buffer as a default for new buffers
-(setq display-buffer-base-action
-      '((display-buffer-reuse-window
-         display-buffer-reuse-mode-window
-         display-buffer-same-window
-         display-buffer-in-previous-window)))
-
 ;; Backups enabled, use nil to disable
 (setq backup-inhibited                   t
       make-backup-files                  nil
