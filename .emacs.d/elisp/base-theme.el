@@ -49,7 +49,7 @@
 
 (use-package doom-themes
   :config
-  (load-theme 'doom-opera t))
+  (load-theme 'doom-zenburn t))
 
 (use-package doom-modeline
   :ensure t
