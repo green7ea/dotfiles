@@ -1,3 +1,8 @@
+;;; package --- Themes emacs -*- lexical-binding: t -*-
+
+;;; Commentary:
+
+;;; Code:
 (setq-default cursor-type 'bar)
 (set-frame-font "FiraCode 11" nil t)
 (blink-cursor-mode 0)
@@ -73,3 +78,4 @@
               right-margin-width 1)
 
 (provide 'base-theme)
+;;; base-theme.el ends here

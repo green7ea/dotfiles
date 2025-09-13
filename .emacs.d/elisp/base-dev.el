@@ -1,3 +1,8 @@
+;;; package --- Devlopment packages to install -*- lexical-binding: t -*-
+
+;;; Commentary:
+
+;;; Code:
 (use-package eglot
   :straight (:type built-in)
   :bind
@@ -51,6 +56,10 @@
 
 (use-package just-mode
   :defer t)
+
+(use-package docker
+  :defer t
+  :bind ("C-c d" . docker))
 
 (provide 'base-dev);
 ;;; base-dev.el ends here

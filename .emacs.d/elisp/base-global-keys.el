@@ -1,3 +1,8 @@
+;;; package --- Keys that should always be active -*- lexical-binding: t -*-
+
+;;; Commentary:
+
+;;; Code:
 (global-set-key [(f5)] 'recompile)
 (global-set-key [(C-f5)] 'compile)
 (global-set-key [(f7)] 'deadgrep)
@@ -31,3 +36,4 @@
   (bind-key* (kbd "C-<left>") 'tab-line-switch-to-prev-tab))
 
 (provide 'base-global-keys)
+;;; base-global-keys.el ends here

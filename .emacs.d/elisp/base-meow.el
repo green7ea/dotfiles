@@ -1,3 +1,8 @@
+;;; package --- Configures meow mode -*- lexical-binding: t -*-
+
+;;; Commentary:
+
+;;; Code:
 (defun meow-setup ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-colemak)
   (meow-motion-overwrite-define-key
@@ -8,8 +13,6 @@
    '("<escape>" . ignore))
   (meow-leader-define-key
    '("?" . meow-cheatsheet)
-   ;; To execute the originally e in MOTION state, use SPC e.
-   '("e" . "H-e")
    '("1" . meow-digit-argument)
    '("2" . meow-digit-argument)
    '("3" . meow-digit-argument)
@@ -95,3 +98,4 @@
   (meow-global-mode 1))
 
 (provide 'base-meow)
+;;; base-meow.el ends here

@@ -1,12 +1,10 @@
+;;; package --- Extensions that are always useful -*- lexical-binding: t -*-
+
+;;; Commentary:
+
+;;; Code:
 (use-package which-key
   :init (which-key-mode))
-
-(use-package windmove
-  :bind
-  ("C-c n" . windmove-left)
-  ("C-c e" . windmove-down)
-  ("C-c i" . windmove-up)
-  ("C-c o" . windmove-right))
 
 (use-package deadgrep
   :defer t)
@@ -37,6 +35,17 @@
   :custom
   (olivetti-body-width 80))
 
+(use-package mistty
+  :bind (([f11] . mistty)
+         :map mistty-prompt-map
+         ("M-<up>" . mistty-send-key)
+         ("M-<down>" . mistty-send-key)))
+
+(use-package langtool
+  :config
+  (setq langtool-bin "/usr/bin/languagetool"))
+
 (add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
 
 (provide 'base-extensions)
+;;; base-extensions.el ends here

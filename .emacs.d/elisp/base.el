@@ -1,3 +1,8 @@
+;;; package --- Installs core packages and sets base vars -*- lexical-binding: t -*-
+
+;;; Commentary:
+
+;;; Code:
 (setq straight-use-package-by-default t)
 (setq straight-vc-git-default-clone-depth 1)
 
@@ -106,3 +111,4 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (provide 'base)
+;;; base.el ends here

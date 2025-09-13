@@ -1,3 +1,8 @@
+;;; package --- Do this before anything else to speed up startup -*- lexical-binding: t -*-
+
+;;; Commentary:
+
+;;; Code:
 (setq read-process-output-max (* 1024 1024))
 
 (setq package-enable-at-startup nil)
@@ -13,3 +18,4 @@
 (push '(tool-bar-lines . 0) default-frame-alist)
 (push '(vertical-scroll-bars) default-frame-alist)
 (setq default-frame-alist '((undecorated . t)))
+;;; early-init.el ends here

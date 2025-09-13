@@ -1,3 +1,8 @@
+;;; package --- Nicer completion -*- lexical-binding: t -*-
+
+;;; Commentary:
+
+;;; Code:
 (use-package vertico
   :ensure t
   :init (vertico-mode))
@@ -33,3 +38,4 @@
   (add-hook 'after-init-hook 'global-company-mode))
 
 (provide 'base-completion)
+;;; base-completion.el ends here
