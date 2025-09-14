@@ -9,8 +9,9 @@
 (setq site-run-file nil)
 (menu-bar-mode -1)
 
-(when (display-graphic-p)
-  (tool-bar-mode -1)
+(when (tool-bar-mode)
+  (tool-bar-mode -1))
+(when (scroll-bar-mode)
   (scroll-bar-mode -1))
 
 (unless (and (display-graphic-p) (eq system-type 'darwin))

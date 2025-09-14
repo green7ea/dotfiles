@@ -67,11 +67,9 @@
                '(height     . 45)
 	             '(min-width  . 1)
                '(width      . 81)
-               '(vertical-scroll-bars . nil)
                '(internal-border-width . 12)
                '(left-fringe    . 0)
                '(right-fringe   . 0)
-               '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
 
 (setq-default left-margin-width 1
