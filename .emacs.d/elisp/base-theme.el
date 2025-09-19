@@ -53,8 +53,14 @@
   :config (winum-mode))
 
 (use-package doom-themes
+  :defer t)
+
+(use-package catppuccin-theme
+  :defer t)
+
+(use-package ef-themes
   :config
-  (load-theme 'doom-zenburn t))
+  (load-theme 'ef-owl t))
 
 (use-package doom-modeline
   :ensure t

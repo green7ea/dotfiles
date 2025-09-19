@@ -12,12 +12,6 @@
 (use-package sudo-edit
   :defer t)
 
-(use-package shackle
-  :init
-  (setq shackle-default-rule '(:same t))
-  :config
-  (shackle-mode))
-
 (use-package undo-fu
   :bind
   ("C-z" . undo-fu-only-undo)
@@ -32,6 +26,8 @@
 
 (use-package olivetti
   :defer t
+  :bind
+  ("C-c o" . olivetti-mode)
   :custom
   (olivetti-body-width 80))
 
