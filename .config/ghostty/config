@@ -1,9 +1,8 @@
 # ghostty +show-config --default --docs
 
-# theme = nord-wave
+theme = Catppuccin Frappe
 # theme = Tomorrow Night
-theme = zenbones_dark
-# theme = zenwritten_dark
+# theme = Zenwritten Dark
 
 # font-family = Fira Code
 font-family = Monaspace Neon

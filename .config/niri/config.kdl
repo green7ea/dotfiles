@@ -1,10 +1,10 @@
-spawn-at-startup "cosmic-panel"
 spawn-at-startup "hyprpaper"
 spawn-at-startup "sunsetr"
+spawn-at-startup "mako"
 spawn-at-startup "kanshi"
+spawn-at-startup "waybar"
+spawn-at-startup "elephant"
 spawn-at-startup "swayidle" "-w" "timeout" "120" "niri msg action power-off-monitors"
-spawn-at-startup "cosmic-osd"
-spawn-at-startup "opensnitch-ui"
 
 input {
     keyboard {
@@ -50,10 +50,10 @@ layout {
     }
 
     struts {
-        left 8
-        right 8
-        top 8
-        bottom 8
+        left 4
+        right 4
+        top 4
+        bottom 4
     }
 }
 
@@ -92,7 +92,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+RETURN repeat=false { spawn "ghostty"; }
-    Mod+SPACE repeat=false { spawn "fuzzel"; }
+    Mod+SPACE repeat=false { spawn "walker"; }
     Mod+W repeat=false { toggle-overview; }
     Mod+F repeat=false { toggle-window-floating; }
     Super+Shift+L repeat=false { spawn "~/.local/bin/lock.sh"; }

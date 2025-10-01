@@ -1,10 +1,11 @@
 {
+  "reload_style_on_change": true,
   "layer": "top",
 
   // Choose the order of the modules
-  "modules-left": [],
+  "modules-left": ["niri/workspaces", "battery", "network"],
   "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "backlight", "network", "battery", "temperature", "tray"],
+  "modules-right": ["pulseaudio", "backlight", "temperature", "tray"],
 
   "tray": {
     "icon-size": 21,
@@ -17,37 +18,37 @@
   },
 
   "temperature": {
-    "critical-threshold": 60,
+    "critical-threshold": 55,
     "format": "{temperatureC}°C"
   },
 
   "backlight": {
     "format": "{percent}% {icon}",
-    "format-icons": ["", ""]
+    "format-icons": ["⦿", "⊜", ""]
   },
 
   "battery": {
     "states": {
-      "full": 95,
-      "good": 90,
+      "full": 85,
+      "good": 60,
       "warning": 30,
       "critical": 15
     },
-    "format": "{time} {icon}",
-    "format-charging": "{capacity}% {icon}",
-    "format-plugged": "{capacity}% {icon}",
+    "format": "",
+    "format-discharging": "{time} {icon} {power:>1.0f}W",
+    "format-charging": "{capacity}% ",
     "format-alt": "{capacity}% {time} {icon}",
-    "format-good": "{time} {icon}",
-    "format-full": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": ["", "", "", "", ""],
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%"
   },
 
   "network": {
-    "format-wifi": "{essid}  {signalStrength}%",
+    "format-wifi": "{essid} ({frequency} GHz)  {signalStrength}%",
     "format-ethernet": "{ifname} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
-    "on-click": "wezterm start nmtui"
+    "on-click": "ghostty -e nmtui"
   },
 
   "pulseaudio": {

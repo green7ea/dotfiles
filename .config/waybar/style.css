@@ -1,79 +1,67 @@
 * {
-    border: none;
-    border-radius: 0;
-    font-size: 12pt;
-    box-shadow: none;
-    text-shadow: none;
-    transition-duration: 0s;
-    color: #d5c4a1;
-    padding: 1px;
+  border: none;
+  border-radius: 0;
+  font-size: 11pt;
+  box-shadow: none;
+  text-shadow: none;
+  transition-duration: 0s;
+  color: #d5c4a1;
+  padding: 1px;
 }
 
 window {
-    font-family: "Ubuntu";
-    color: #d5c4a1;
-    background: rgba(0, 0, 0, 0.6);
+  font-family: "Ubuntu";
+  color: #d5c4a1;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 #workspaces {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 #workspaces button {
-    padding: 0 4px;
+  padding: 0 4px;
 }
 
 #workspaces button.visible {
 }
 
 #workspaces button.focused {
-    background-color: #458588;
+  background-color: #ff8427;
 }
 
 #battery, #network, #pulseaudio, #clock, #custom-power, #custom-qbitstats {
-    margin: 0px 3px 0px 1px;
-    min-width: 10px;
+  margin: 0px 3px 0px 1px;
+  min-width: 10px;
 }
 
 #clock {
-    margin: 0px 16px 0px 10px;
-    min-width: 10px;
+  margin: 0px 16px 0px 10px;
+  min-width: 10px;
 }
 
 #clock, #battery, #cpu, #memory, #network, #temperature, #pulseaudio, #custom-spotify, #tray, #mode {
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: 0 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin: 0 0;
 }
 
-#pulseaudio.bluetooth {
-    color: #4040ff;
+#pulseaudio.bluetooth, #battery.discharging {
+  color: #6070ff;
 }
 
-#battery {
-    color: #689d6a;
-}
-
-#battery.critical {
-    color: #fb4934;
-}
-
-#battery.good {
-    color: #689d6a;
+#battery, #battery.good, #network.wifi {
+  color: #7aa27a;
 }
 
 #battery.charging {
-    color: #689d6a;
+  color: #ffc800;
 }
 
-#temperature.critical {
-    color: #fb4934;
-}
-
-#network.wifi {
-    color: #689d6a;
+#battery.critical, #temperature.critical {
+  color: #fb4934;
 }
 
 #network.disconnected {
-    color: #fe8019;
+  color: #ff8427;
 }
