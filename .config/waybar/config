@@ -3,9 +3,9 @@
   "layer": "top",
 
   // Choose the order of the modules
-  "modules-left": ["niri/workspaces", "battery", "network"],
-  "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "backlight", "temperature", "tray"],
+  "modules-left": ["tray", "battery", "network"],
+  "modules-center": ["niri/workspaces"],
+  "modules-right": ["pulseaudio", "backlight", "temperature", "clock"],
 
   "tray": {
     "icon-size": 21,
