@@ -52,7 +52,7 @@ layout {
     struts {
         left 4
         right 4
-        top 4
+        top -4
         bottom 4
     }
 }
@@ -95,7 +95,7 @@ binds {
     Mod+SPACE repeat=false { spawn "walker"; }
     Mod+W repeat=false { toggle-overview; }
     Mod+F repeat=false { toggle-window-floating; }
-    Super+Shift+L repeat=false { spawn "~/.local/bin/lock.sh"; }
+    Super+Shift+L repeat=false { spawn "hyprlock"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "-l" "1.0" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
@@ -105,9 +105,9 @@ binds {
     XF86MonBrightnessUp    { spawn "brightnessctl" "set" "10%+"; }
     XF86MonBrightnessDown  { spawn "brightnessctl" "set" "10%-"; }
 
-    XF86AudioPlay repeat=false { spawn "playerctl" "play-pause"; }
-    XF86AudioPause repeat=false { spawn "playerctl" "play-pause"; }
-    XF86AudioStop repeat=false { spawn "playerctl" "play-pause"; }
+    XF86AudioPlay repeat=false { spawn "playerctl" "play"; }
+    XF86AudioPause repeat=false { spawn "playerctl" "pause"; }
+    XF86AudioStop repeat=false { spawn "playerctl" "stop"; }
     XF86AudioNext repeat=false { spawn "playerctl" "next"; }
     XF86AudioPrev repeat=false { spawn "playerctl" "previous"; }
 
