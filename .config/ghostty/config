@@ -30,3 +30,5 @@ cursor-style = underline
 
 background-opacity = 0.95
 background-blur = 20
+
+window-inherit-working-directory = false
