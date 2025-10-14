@@ -32,7 +32,8 @@
   (olivetti-body-width 80))
 
 (use-package mistty
-  :bind (([f11] . mistty)
+  :bind (([f11] . mistty-create)
+         ([C-f11] . mistty)
          :map mistty-prompt-map
          ("M-<up>" . mistty-send-key)
          ("M-<down>" . mistty-send-key)))
