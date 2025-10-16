@@ -32,15 +32,18 @@ window {
 }
 
 #workspaces button.active {
+  border: 2px solid #333333;
   min-width: 30px;
-}
 
-#workspaces button.focused {
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.35) 100%
+    rgba(0, 0, 0, 0.7) 100%
   );
+}
+
+#workspaces button.active.focused {
+  border: 2px solid #ffc87f;
 }
 
 #clock {
@@ -60,9 +63,17 @@ window {
 #pulseaudio,
 #temperature,
 #tray {
-  margin: 0 6px;
+  margin: 0 12px;
   padding: 0 12px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  border-radius: 100px;
+  margin-top: 4px;
 }
 
 #pulseaudio.bluetooth,

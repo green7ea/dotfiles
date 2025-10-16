@@ -1,4 +1,4 @@
-spawn-at-startup "hyprpaper"
+spawn-at-startup "swww-daemon"
 spawn-at-startup "sunsetr"
 spawn-at-startup "mako"
 spawn-at-startup "kanshi"
@@ -50,10 +50,7 @@ layout {
     }
 
     struts {
-        left 4
-        right 4
         top -4
-        bottom 4
     }
 }
 
@@ -96,6 +93,8 @@ binds {
     Mod+W repeat=false { toggle-overview; }
     Mod+F repeat=false { toggle-window-floating; }
     Super+Shift+L repeat=false { spawn "hyprlock"; }
+
+    Mod+B repeat=false { spawn "wp"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "-l" "1.0" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
