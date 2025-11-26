@@ -72,10 +72,6 @@
   :init
   (spacious-padding-mode 1))
 
-(use-package breadcrumb
-  :config
-  (breadcrumb-mode 1))
-
 (use-package centaur-tabs
   :ensure t
   :init
