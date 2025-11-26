@@ -14,12 +14,14 @@
 
   "clock": {
     "format": "{:%a %b %d     %H:%M}",
-    "tooltip": false
+    "tooltip": false,
+    "on-click": "gnome-calendar"
   },
 
   "temperature": {
     "critical-threshold": 55,
-    "format": "{temperatureC}°C"
+    "format": "{temperatureC}°C",
+    "on-click": "ghostty -e btop"
   },
 
   "backlight": {
@@ -48,7 +50,7 @@
     "format-ethernet": "{ifname} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
-    "on-click": "ghostty -e nmtui"
+    "on-click": "cosmic-settings network"
   },
 
   "pulseaudio": {
@@ -65,6 +67,6 @@
       "car": "",
       "default": ["", ""]
     },
-    "on-click": "pavucontrol"
+    "on-click": "ghostty -e bluetui"
   }
 }

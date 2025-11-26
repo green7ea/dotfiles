@@ -89,7 +89,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+RETURN repeat=false { spawn "ghostty"; }
-    Mod+SPACE repeat=false { spawn "walker"; }
+    Mod+SPACE repeat=false { spawn "fuzzel"; }
     Mod+W repeat=false { toggle-overview; }
     Mod+F repeat=false { toggle-window-floating; }
     Super+Shift+L repeat=false { spawn "hyprlock"; }

@@ -72,5 +72,24 @@
   :init
   (spacious-padding-mode 1))
 
+(use-package breadcrumb
+  :config
+  (breadcrumb-mode 1))
+
+(use-package centaur-tabs
+  :ensure t
+  :init
+  (setq centaur-tabs-set-bar 'under)
+  (setq x-underline-at-descent-line t)
+  (setq centaur-tabs-set-close-button nil)
+  (setq centaur-tabs-set-modified-marker t)
+  (setq centaur-tabs-show-new-tab-button nil)
+  (centaur-tabs-mode t)
+  :bind
+  ("M-v" . centaur-tabs-forward-tab)
+  ("M-c" . centaur-tabs-backward-tab)
+  ("C-M-v" . centaur-tabs-forward-group)
+  ("C-M-c" . centaur-tabs-backward-group))
+
 (provide 'base-theme)
 ;;; base-theme.el ends here
