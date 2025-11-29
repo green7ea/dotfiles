@@ -94,7 +94,7 @@ binds {
     Mod+F repeat=false { toggle-window-floating; }
     Super+Shift+L repeat=false { spawn "hyprlock"; }
 
-    Mod+B repeat=false { spawn "wp"; }
+    Mod+B repeat=false { spawn "random-wallpaper.sh"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "-l" "1.0" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
