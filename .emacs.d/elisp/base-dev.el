@@ -50,7 +50,8 @@
       (markdown-follow-link-at-point))
 
 (use-package markdown-mode
-  :config (setq-default markdown-hide-urls t)
+  :custom
+  (markdown-hide-urls t)
   :bind (:map markdown-mode-map
               ("M-." . markdown-follow-at-point)))
 

@@ -53,14 +53,16 @@
   :config (winum-mode))
 
 (use-package doom-themes
-  :defer t)
+  :config
+  (load-theme 'doom-opera t))
 
 (use-package catppuccin-theme
   :defer t)
 
 (use-package ef-themes
-  :config
-  (load-theme 'ef-owl t))
+  :defer t)
+  ;:config
+  ;(load-theme 'ef-owl t))
 
 (use-package doom-modeline
   :ensure t
@@ -74,18 +76,21 @@
 
 (use-package centaur-tabs
   :ensure t
+  :custom
+  (centaur-tabs-set-bar 'under)
+  (x-underline-at-descent-line t)
+  (centaur-tabs-set-close-button nil)
+  (centaur-tabs-set-modified-marker t)
+  (centaur-tabs-show-new-tab-button nil)
   :init
-  (setq centaur-tabs-set-bar 'under)
-  (setq x-underline-at-descent-line t)
-  (setq centaur-tabs-set-close-button nil)
-  (setq centaur-tabs-set-modified-marker t)
-  (setq centaur-tabs-show-new-tab-button nil)
   (centaur-tabs-mode t)
   :bind
   ("M-v" . centaur-tabs-forward-tab)
   ("M-c" . centaur-tabs-backward-tab)
   ("C-M-v" . centaur-tabs-forward-group)
   ("C-M-c" . centaur-tabs-backward-group))
+;  :config
+;  (add-hook 'dired-mode-hook #'project-buffer-mode))
 
 (provide 'base-theme)
 ;;; base-theme.el ends here

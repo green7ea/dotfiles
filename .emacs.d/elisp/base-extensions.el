@@ -48,8 +48,12 @@
          ("M-<down>" . mistty-send-key)))
 
 (use-package langtool
-  :config
-  (setq langtool-bin "/usr/bin/languagetool"))
+  :custom
+  (langtool-bin "/usr/bin/languagetool"))
+
+(use-package fancy-compilation
+  :ensure t
+  :commands (fancy-compilation-mode))
 
 (add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
 
