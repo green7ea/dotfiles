@@ -12,6 +12,15 @@
 (use-package sudo-edit
   :defer t)
 
+(use-package dired
+  :straight (:type built-in)
+  :custom
+  (dired-kill-when-opening-new-dired-buffer t)
+  (dired-listing-switches "-ah --group-directories-first")
+  :config
+  (put 'dired-find-alternate-file 'disabled nil)
+  :hook (dired-mode . dired-hide-details-mode))
+
 (use-package undo-fu
   :bind
   ("C-z" . undo-fu-only-undo)
