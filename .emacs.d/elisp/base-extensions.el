@@ -40,12 +40,14 @@
   :custom
   (olivetti-body-width 80))
 
-(use-package mistty
-  :bind (([f11] . mistty-create)
-         ([C-f11] . mistty)
-         :map mistty-prompt-map
-         ("M-<up>" . mistty-send-key)
-         ("M-<down>" . mistty-send-key)))
+(use-package flyspell
+  :straight nil
+  :bind
+  ("C-c f" . flyspell-mode))
+
+(use-package eat
+  :bind (([f11] . eat)
+         ([C-f11] . eat-project)))
 
 (use-package langtool
   :custom

@@ -68,8 +68,8 @@
    '("O" . meow-right-expand)
    '("p" . meow-yank)
    '("q" . meow-quit)
-   '("r" . er/expand-region)
-   '("R" . er/contract-region)
+   '("r" . expreg-expand)
+   '("R" . expreg-contract)
    '("s" . meow-insert)
    '("S" . meow-open-above)
    '("t" . meow-till)
@@ -85,7 +85,7 @@
    '("'" . repeat)
    '("<escape>" . ignore)))
 
-(use-package expand-region)
+(use-package expreg)
 
 (use-package meow
   :config (meow-setup)

@@ -52,17 +52,22 @@
   ("M-0" . winum-select-window-0)
   :config (winum-mode))
 
+(use-package org-modern
+  :defer t)
+
 (use-package doom-themes
-  :config
-  (load-theme 'doom-opera t))
+  :defer t)
 
 (use-package catppuccin-theme
   :defer t)
 
 (use-package ef-themes
   :defer t)
-  ;:config
-  ;(load-theme 'ef-owl t))
+
+(use-package kaolin-themes
+  :ensure t
+  :config
+  (load-theme 'kaolin-temple t))
 
 (use-package doom-modeline
   :ensure t
@@ -73,24 +78,6 @@
   :ensure t
   :init
   (spacious-padding-mode 1))
-
-(use-package centaur-tabs
-  :ensure t
-  :custom
-  (centaur-tabs-set-bar 'under)
-  (x-underline-at-descent-line t)
-  (centaur-tabs-set-close-button nil)
-  (centaur-tabs-set-modified-marker t)
-  (centaur-tabs-show-new-tab-button nil)
-  :init
-  (centaur-tabs-mode t)
-  :bind
-  ("M-v" . centaur-tabs-forward-tab)
-  ("M-c" . centaur-tabs-backward-tab)
-  ("C-M-v" . centaur-tabs-forward-group)
-  ("C-M-c" . centaur-tabs-backward-group))
-;  :config
-;  (add-hook 'dired-mode-hook #'project-buffer-mode))
 
 (provide 'base-theme)
 ;;; base-theme.el ends here

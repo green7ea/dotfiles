@@ -22,7 +22,7 @@
 (use-package magit
   :defer t)
 
-(use-package git-timemachine
+(use-package git-link
   :defer t)
 
 (use-package python-ts-mode

@@ -26,14 +26,7 @@
   (bind-key* (kbd "C-M-n") 'backward-word)
   (bind-key* (kbd "C-M-e") 'forward-paragraph)
   (bind-key* (kbd "C-M-i") 'backward-paragraph)
-  (bind-key* (kbd "C-M-o") 'forward-word)
-
-  (bind-key* (kbd "C-c C-f b") 'flyspell-buffer)
-  (bind-key* (kbd "C-c C-f w") 'flyspell-auto-correct-word)
-  (bind-key* (kbd "C-c C-f c") 'flyspell-check-previous-highlighted-word)
-
-  (bind-key* (kbd "C-<right>") 'tab-line-switch-to-next-tab)
-  (bind-key* (kbd "C-<left>") 'tab-line-switch-to-prev-tab))
+  (bind-key* (kbd "C-M-o") 'forward-word))
 
 (provide 'base-global-keys)
 ;;; base-global-keys.el ends here
