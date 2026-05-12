@@ -1,10 +1,6 @@
 # ghostty +show-config --default --docs
 
-# theme = Catppuccin Frappe
-# theme = Tomorrow Night
-theme = Zenwritten Dark
-# theme = Afterglow
-# theme = Ayu
+config-file = ?auto/theme.ghostty
 
 # font-family = Fira Code
 font-family = Monaspace Neon
@@ -32,7 +28,6 @@ cursor-style = underline
 cursor-style-blink = false
 adjust-cursor-thickness = 3
 
-background-opacity = 0.95
-background-blur = 20
+background-opacity = 0.85
 
 window-inherit-working-directory = false
