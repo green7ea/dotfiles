@@ -37,7 +37,7 @@
 (setq default-process-coding-system '(utf-8-unix . utf-8-unix))
 
 ;; Emacs customizations
-(setq save-interprogram-paste-before-kill t
+(setq save-interprogram-paste-before-kill nil
       mouse-yank-at-point                 t
       require-final-newline               t
       visible-bell                        nil
